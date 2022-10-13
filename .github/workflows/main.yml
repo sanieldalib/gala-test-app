@@ -7,4 +7,5 @@ jobs:
     steps:
       - name: Test and Build
         run: |
+          pwd
           fastlane test_build
