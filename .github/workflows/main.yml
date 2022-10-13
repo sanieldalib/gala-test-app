@@ -8,4 +8,5 @@ jobs:
       - name: Test and Build
         run: |
           pwd
+          ls
           fastlane test_build
