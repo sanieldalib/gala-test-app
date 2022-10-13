@@ -1,0 +1,10 @@
+on: [workflow_dispatch]
+
+jobs:
+  test-build-ios:
+    runs-on: [self-hosted, macos, gala]
+    name: Test and Build iOS App
+    steps:
+      - name: Test and Build
+        run: |
+          fastlane test_build
