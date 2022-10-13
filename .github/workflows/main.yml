@@ -9,4 +9,3 @@ jobs:
         run: |
           pwd
           ls
-          fastlane test_build
