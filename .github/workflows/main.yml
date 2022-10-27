@@ -1,10 +1,13 @@
 on: [workflow_dispatch]
 
+name: Test iOS App
 jobs:
   test-build-ios:
     runs-on: [self-hosted, macos, gala]
     name: Test iOS App
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Test
         run: |
           ls
