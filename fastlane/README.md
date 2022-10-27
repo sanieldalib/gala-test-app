@@ -55,10 +55,10 @@ Build app
 
 
 
-### ios test_build
+### ios test
 
 ```sh
-[bundle exec] fastlane ios test_build
+[bundle exec] fastlane ios test
 ```
 
 

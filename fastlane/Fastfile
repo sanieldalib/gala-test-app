@@ -44,10 +44,10 @@ platform :ios do
     run_tests(scheme: "Networking")
   end
 
-  lane :test_build do
+  lane :test do
+    carthage_bootstrap()
     unit_tests()
     networking_tests()
     ui_tests()
-    build()
   end
 end
